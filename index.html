@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIYWEX Portfolio Crypto - Gestion de portefeuille crypto</title>
+    <meta name="description" content="Application complète de gestion de portefeuille crypto avec graphiques avancés">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #f8fafc;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: 2rem;
+        }
+        
+        .title {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #22c55e, #34d399);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            font-size: 1.25rem;
+            color: #cbd5e1;
+            margin-bottom: 2rem;
+        }
+        
+        .badges {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+        
+        .badge {
+            background: #22c55e;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        
+        .badge:hover {
+            transform: translateY(-2px);
+        }
+        
+        .badge.blue {
+            background: #3b82f6;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #22c55e, #34d399);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 0.75rem;
+            text-decoration: none;
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin: 2rem 0;
+            transition: all 0.3s;
+            box-shadow: 0 10px 30px -10px rgba(34, 197, 94, 0.3);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px -10px rgba(34, 197, 94, 0.4);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+        
+        .feature-card {
+            background: rgba(30, 41, 59, 0.5);
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #22c55e;
+        }
+        
+        .tech-section {
+            background: rgba(30, 41, 59, 0.3);
+            padding: 3rem;
+            border-radius: 1rem;
+            margin: 4rem 0;
+            text-align: center;
+        }
+        
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .tech-item {
+            padding: 1rem;
+            background: rgba(34, 197, 94, 0.1);
+            border-radius: 0.5rem;
+            border: 1px solid rgba(34, 197, 94, 0.3);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(34, 197, 94, 0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            .badges {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="Logo DIYWEX_1874.png" alt="DIYWEX Logo" class="logo">
+            <h1 class="title">🚀 DIYWEX Portfolio Crypto</h1>
+            <p class="subtitle">Application complète de gestion de portefeuille crypto avec graphiques avancés</p>
+            
+            <div class="badges">
+                <span class="badge">✨ Version V171</span>
+                <span class="badge blue">🔥 Active</span>
+                <span class="badge">⚡ Performance</span>
+            </div>
+            
+            <a href="https://fdsa46jve4.skywork.website" class="cta-button" target="_blank">
+                🚀 Essayer maintenant
+            </a>
+        </header>
+
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3 class="feature-title">Graphiques interactifs</h3>
+                <p>Visualisation avancée avec modes Ligne et Aire pour analyser l'évolution de votre portefeuille</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3 class="feature-title">Conversion EUR/USD</h3>
+                <p>Taux de change en temps réel pour suivre vos investissements dans votre devise préférée</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🔔</div>
+                <h3 class="feature-title">Alertes personnalisées</h3>
+                <p>Notifications intelligentes sur les variations de prix de vos cryptomonnaies favorites</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">👤</div>
+                <h3 class="feature-title">Plans d'abonnement</h3>
+                <p>Formules Gratuit et Premium avec fonctionnalités étendues selon vos besoins</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3 class="feature-title">Design responsive</h3>
+                <p>Interface optimisée pour tous les appareils : desktop, tablette et mobile</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3 class="feature-title">Performance</h3>
+                <p>Chargement rapide et navigation fluide pour une expérience utilisateur optimale</p>
+            </div>
+        </section>
+
+        <section class="tech-section">
+            <h2>🛠️ Technologies utilisées</h2>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <strong>Frontend</strong><br>
+                    React, TypeScript, Tailwind CSS
+                </div>
+                <div class="tech-item">
+                    <strong>Backend</strong><br>
+                    Supabase
+                </div>
+                <div class="tech-item">
+                    <strong>Graphiques</strong><br>
+                    Recharts
+                </div>
+                <div class="tech-item">
+                    <strong>UI Components</strong><br>
+                    Radix UI, Shadcn/ui
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p><strong>Développé avec ❤️ par DIYWEX</strong></p>
+            <p style="margin-top: 1rem; color: #64748b;">Innovation • Performance • Simplicité</p>
+        </footer>
+    </div>
+</body>
