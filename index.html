@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -47,10 +47,33 @@
             background-clip: text;
         }
         
+        .rocket {
+            background: none !important;
+            -webkit-background-clip: unset !important;
+            -webkit-text-fill-color: unset !important;
+            background-clip: unset !important;
+            color: initial !important;
+        }
+        
         .subtitle {
             font-size: 1.25rem;
             color: #cbd5e1;
             margin-bottom: 2rem;
+        }
+        
+        .made-in-france {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(30, 41, 59, 0.6);
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #cbd5e1;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
         }
         
         .badges {
@@ -174,11 +197,15 @@
     <div class="container">
         <header class="header">
             <img src="Logo DIYWEX.jpg" alt="DIYWEX Logo" class="logo">
-            <h1 class="title">🚀 DIYWEX Portfolio Crypto</h1>
+            <h1 class="title"><span class="rocket">🚀</span> DIYWEX Portfolio Crypto</h1>
             <p class="subtitle">Application complète de gestion de portefeuille crypto avec graphiques avancés</p>
             
+            <div class="made-in-france">
+                🇫🇷 Fabriqué en France
+            </div>
+            
             <div class="badges">
-                <span class="badge">✨ Version V171</span>
+                <span class="badge">✨ Version V1</span>
                 <span class="badge blue">🔒 Données protégées</span>
                 <span class="badge">⚡ Prix temps réel</span>
             </div>
@@ -254,3 +281,4 @@
         </footer>
     </div>
 </body>
+</html>
