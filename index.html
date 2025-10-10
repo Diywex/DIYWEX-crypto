@@ -148,6 +148,36 @@
             box-shadow: 0 8px 25px rgba(34, 197, 94, 0.4);
         }
         
+        .badge.pwa {
+            background: linear-gradient(135deg, #f59e0b, #f97316);
+            border-color: rgba(245, 158, 11, 0.3);
+        }
+        
+        .badge.pwa:hover {
+            box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
+        }
+        
+        /* ANIMATIONS CLIGNOTANTES POUR LE BOUTON PRINCIPAL */
+        @keyframes pulse-glow {
+            0%, 100% {
+                box-shadow: 0 10px 30px -10px rgba(34, 197, 94, 0.3);
+                transform: scale(1);
+            }
+            50% {
+                box-shadow: 0 20px 50px -5px rgba(34, 197, 94, 0.6);
+                transform: scale(1.05);
+            }
+        }
+        
+        @keyframes text-glow {
+            0%, 100% {
+                text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+            }
+            50% {
+                text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(34, 197, 94, 0.5);
+            }
+        }
+        
         .cta-buttons {
             display: flex;
             justify-content: center;
@@ -166,12 +196,14 @@
             font-size: 1.25rem;
             font-weight: bold;
             transition: all 0.3s;
-            box-shadow: 0 10px 30px -10px rgba(34, 197, 94, 0.3);
+            /* ANIMATION CLIGNOTANTE */
+            animation: pulse-glow 2s ease-in-out infinite;
         }
         
         .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 20px 40px -10px rgba(34, 197, 94, 0.4);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 25px 50px -10px rgba(34, 197, 94, 0.5);
+            animation: none; /* Arrêter l'animation au hover */
         }
         
         .excel-button {
@@ -194,6 +226,7 @@
         
         .cta-rocket {
             color: #ff6b35 !important;
+            animation: text-glow 2s ease-in-out infinite;
         }
         
         .features {
@@ -293,6 +326,7 @@
                 <span class="badge version">✨ Version V1</span>
                 <span class="badge security">🔒 Données protégées</span>
                 <span class="badge realtime">⚡ Prix en temps réel</span>
+                <span class="badge pwa">📱 Application PWA</span>
             </div>
             
             <div class="cta-buttons">
@@ -325,15 +359,15 @@
             </div>
             
             <div class="feature-card">
-                <div class="feature-icon">👤</div>
-                <h3 class="feature-title">Plans d'abonnement</h3>
-                <p>Formules Gratuit et Premium avec fonctionnalités étendues selon vos besoins</p>
+                <div class="feature-icon">📱</div>
+                <h3 class="feature-title">Application PWA</h3>
+                <p>Installez l'app sur votre téléphone ou ordinateur pour un accès rapide, même hors ligne</p>
             </div>
             
             <div class="feature-card">
-                <div class="feature-icon">📱</div>
-                <h3 class="feature-title">Design responsive</h3>
-                <p>Interface optimisée pour tous les appareils : desktop, tablette et mobile</p>
+                <div class="feature-icon">👤</div>
+                <h3 class="feature-title">Plans d'abonnement</h3>
+                <p>Formules Gratuit et Premium avec fonctionnalités étendues selon vos besoins</p>
             </div>
             
             <div class="feature-card">
