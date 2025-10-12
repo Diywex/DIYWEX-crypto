@@ -156,6 +156,31 @@
         .badge.pwa:hover {
             box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
         }
+
+        /* BADGE DÉCENTRALISÉ */
+        .badge.decentralized {
+            background: linear-gradient(135deg, #7c3aed, #8b5cf6);
+            border-color: rgba(124, 58, 237, 0.3);
+        }
+        
+        .badge.decentralized:hover {
+            box-shadow: 0 8px 25px rgba(124, 58, 237, 0.4);
+        }
+
+        /* BADGE SÉCURITÉ MAXIMALE - MÊME STYLE QUE LES AUTRES */
+        .badge.security-max {
+            background: linear-gradient(135deg, #dc2626, #ef4444);
+            border-color: rgba(220, 38, 38, 0.3);
+            min-width: 200px; /* Un peu plus large pour le texte */
+        }
+        
+        .badge.security-max:hover {
+            box-shadow: 0 8px 25px rgba(220, 38, 38, 0.4);
+        }
+
+        .security-title {
+            color: white; /* Blanc comme les autres badges */
+        }
         
         /* ANIMATIONS CLIGNOTANTES POUR LE BOUTON PRINCIPAL */
         @keyframes pulse-glow {
@@ -327,6 +352,8 @@
                 <span class="badge security">🔒 Données protégées</span>
                 <span class="badge realtime">⚡ Prix en temps réel</span>
                 <span class="badge pwa">📱 Application PWA</span>
+                <span class="badge decentralized">🌐 Stockage décentralisé</span>
+                <span class="badge security-max">🔒 <span class="security-title">Sécurité maximale</span></span>
             </div>
             
             <div class="cta-buttons">
@@ -375,6 +402,18 @@
                 <h3 class="feature-title">Performance</h3>
                 <p>Chargement rapide et navigation fluide pour une expérience utilisateur optimale</p>
             </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🌐</div>
+                <h3 class="feature-title">Stockage décentralisé</h3>
+                <p>Vos données de portefeuille restent sur votre appareil. Contrôle total, zéro serveur externe</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3 class="feature-title">Sécurité maximale</h3>
+                <p>Aucune donnée stockée en ligne, aucun risque de fuite de données. Protection totale de votre vie privée</p>
+            </div>
         </section>
 
         <section class="tech-section">
@@ -395,6 +434,10 @@
                 <div class="tech-item">
                     <strong>UI Components</strong><br>
                     Radix UI, Shadcn/ui
+                </div>
+                <div class="tech-item">
+                    <strong>Stockage</strong><br>
+                    Local Storage (décentralisé)
                 </div>
             </div>
         </section>
